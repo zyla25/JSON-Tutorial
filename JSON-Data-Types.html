@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="intro.css">
+    <title>JSON Data Types</title>
+</head>
+<body>
+    <div class="wrapper">
+        <nav id="navbar">
+            <div class="mobile-nav">
+                <div class="logo">
+                    <img src="resources/jsonLogo.png" alt="JSON LOGO" class="json-logo">
+                    <h3 class="nav-heading">JSON Tutorial</h3>
+                </div>
+                <div class="burger-menu">
+                    <div class="bar-container">
+                        <div class="container" id="container">
+                            <span class="bar1"></span>
+                            <span class="bar2"></span>
+                            <span class="bar3"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-btn-container" id="nav-btn-container">
+                <a href="index.html"><i class="fa fa-home home" aria-hidden="true"></i></a>
+                <h1 class="title">TOPICS</h1>
+                <a href="JSON-Intro.html" class="nav-btns ">JSON Intro</a>
+                <a href="JSON-Syntax.html" class="nav-btns">JSON Syntax</a>
+                <a href="JSON-Data-Types.html" class="nav-btns active">JSON Data Types</a>
+                <a href="JSON-Parse.html" class="nav-btns">JSON Parse</a>
+                <a href="JSON-Objects.html" class="nav-btns">JSON Objects</a>
+                <a href="JSON-Arrays.html" class="nav-btns">JSON Arrays</a>
+                <a href="JSON-Server.html" class="nav-btns">JSON Server</a>
+                <a href="JSON-PHP.html" class="nav-btns">JSON PHP</a>
+            </div>
+        </nav>
+
+         <main id="main">
+            <h1 class="main-title">JSON Data Types</h1>
+
+            <div class="main-info">
+                <img src="resources/jsonLogo.png" alt="" class="main-logo">
+                <h2 class="main-info-title">Valid Data Types</h2>
+                <p class="par">In JSON, values must be one of the following data types:</p> 
+                <p class="par">
+                    <ul>
+                        <li>a string</li>
+                        <li>a number</li>
+                        <li>an objects (JSON Objects)</li>
+                        <li>an array</li>
+                        <li>a boolean</li>
+                        <li>null</li>
+                    </ul>
+                </p>
+                <div class="important-info-red">
+                    <h3 class="important-header">!!!</h3>
+                    <p class="par">JSON values cannot be one of the following data types:</p> 
+                    <p class="par">
+                        <ul>
+                            <li>a function</li>
+                            <li>a date</li>
+                            <li>undefined</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>    
+
+                <div class="main-info">
+                    <h2 class="main-info-title">JSON Strings</h2>
+                    <p class="par">Strings in JSON must be written in double quotes.</p> 
+                    <div class="example">
+                        <h2 class="example-title">Example</h2>
+                        <p class="red-par">{"name":"John"}</p>
+                    </div> 
+                </div>
+
+                <div class="main-info">
+                    <h2 class="main-info-title">JSON Numbers</h2>
+                    <p class="par">Numbers in JSON must be an integer or a floating point.</p> 
+                    <div class="example">
+                        <h2 class="example-title">Example</h2>
+                        <p class="red-par">{"age":30}</p>
+                    </div> 
+                </div>
+
+                <div class="main-info">
+                    <h2 class="main-info-title">JSON Objects</h2>
+                    <p class="par">Values in JSON can be objects.</p> 
+                    <div class="example">
+                        <h2 class="example-title">Example</h2>
+                        <p class="red-par">{ <br> "employee":{"name":"John", "age":30, "city":"New York"} <br>}</p>
+                    </div> 
+                    <div class="important-info">
+                        <h3 class="important-header">!!!</h3>
+                        <p class="par">Objects as values in JSON must follow the JSON syntax.</p>
+                    </div>
+                </div>
+
+                <div class="main-info">
+                    <h2 class="main-info-title">JSON Arrays</h2>
+                    <p class="par">Values in JSON can be arrays.</p> 
+                    <div class="example">
+                        <h2 class="example-title">Example</h2>
+                        <p class="red-par">{ <br> "employees":["John", "Anna", "Peter"]<br>}</p>
+                    </div> 
+                </div>
+
+                <div class="main-info">
+                    <h2 class="main-info-title">JSON Booleans</h2>
+                    <p class="par">Values in JSON can be true/false.</p> 
+                    <div class="example">
+                        <h2 class="example-title">Example</h2>
+                        <p class="red-par">{"sale":true}</p>
+                    </div> 
+                </div>
+
+                <div class="main-info">
+                    <h2 class="main-info-title">JSON null</h2>
+                    <p class="par">Values in JSON can be null.</p> 
+                    <div class="example">
+                        <h2 class="example-title">Example</h2>
+                        <p class="red-par">{"middlename":null}</p>
+                    </div> 
+                </div>
+        </main>
+     </div>    
+
+     <script src="javascript.js"></script>
+</body>
+</html>

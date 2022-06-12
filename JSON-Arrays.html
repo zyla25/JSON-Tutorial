@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="resources/jsonLogo.png" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="intro.css">
+    <title>JSON Arrays</title>
+</head>
+<body>
+    <div class="wrapper">
+        <nav id="navbar">
+            <div class="mobile-nav">
+                <div class="logo">
+                    <img src="resources/jsonLogo.png" alt="JSON LOGO" class="json-logo">
+                    <h3 class="nav-heading">JSON Tutorial</h3>
+                </div>
+                <div class="burger-menu">
+                    <div class="bar-container">
+                        <div class="container" id="container">
+                            <span class="bar1"></span>
+                            <span class="bar2"></span>
+                            <span class="bar3"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-btn-container" id="nav-btn-container">
+                <a href="index.html"><i class="fa fa-home home" aria-hidden="true"></i></a>
+                <h1 class="title">TOPICS</h1>
+                <a href="JSON-Intro.html" class="nav-btns">JSON Intro</a>
+                <a href="JSON-Syntax.html" class="nav-btns">JSON Syntax</a>
+                <a href="JSON-Data-Types.html" class="nav-btns">JSON Data Types</a>
+                <a href="JSON-Parse.html" class="nav-btns">JSON Parse</a>
+                <a href="JSON-Objects.html" class="nav-btns">JSON Objects</a>
+                <a href="JSON-Arrays.html" class="nav-btns active">JSON Arrays</a>
+                <a href="JSON-Server.html" class="nav-btns">JSON Server</a>
+                <a href="JSON-PHP.html" class="nav-btns">JSON PHP</a>
+            </div>
+        </nav>
+
+        <!-- MAIN -->
+        <main id="main">
+            <h1 class="main-title">JSON Arrays</h1>
+            <div class="main-info">
+                <img src="resources/jsonLogo.png" alt="" class="main-logo">
+                <p class="par">This is a JSON string:</p> 
+                <div class="example">
+                    <h2 class="example-title">Example</h2>
+                    <p class="red-par">'["Ford", "BMW", "Fiat"]'</p>
+                </div>
+                <p class="par">Inside the JSON string there is a JSON array literal:</p> 
+                <div class="example">
+                    <h2 class="example-title">Example</h2>
+                    <p class="red-par">["Ford", "BMW", "Fiat"]</p>
+                </div>
+                <p class="par">Arrays in JSON are almost the same as arrays in JavaScript.</pr>
+                <p class="par">In JSON, array values must be of type string, number, object, array, boolean or null.</pr>
+                <p class="par">In JavaScript, array values can be all of the above, plus any other valid JavaScript expression, including functions, dates, and undefined.</pr>
+            </div>  
+            <div class="main-info">
+                <h2 class="main-info-title">JavaScript Arrays</h2>
+                <p class="par">You can create a JavaScript array from a literal:</p> 
+                <div class="example">
+                    <h2 class="example-title">Example</h2>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjson_array_literal" class="try-btn">View Example</a>
+                </div> 
+                <p class="par">You can create a JavaScript array by parsing a JSON string:</p> 
+                <div class="example">
+                    <h2 class="example-title">Example</h2>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjson_array_parse" class="try-btn">View Example</a>
+                </div> 
+            </div>  
+            <div class="main-info">
+                <h2 class="main-info-title">Accessing Array Values</h2>
+                <p class="par">You access array values by index:</p> 
+                <div class="example">
+                    <h2 class="example-title">Example</h2>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjson_array_index" class="try-btn">View Example</a>
+                </div> 
+            </div>
+            <div class="main-info">
+                <h2 class="main-info-title">Arrays in Objects</h2>
+                <div class="example">
+                    <h2 class="example-title">Example</h2>
+                    <p class="par">{</p> 
+                    <p class="red-par">"name":"John",</p> 
+                    <p class="red-par">"age":30,</p>
+                    <p class="red-par">"cars":["Ford", "BMW", "Fiat"]</p>
+                    <p class="par">}</p>
+                </div>    
+                <p class="par">You access array values by index:</p>
+                <div class="example">
+                    <h2 class="example-title">Example</h2>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjson_array_access" class="try-btn">View Example</a>
+                </div> 
+            </div>
+            <div class="main-info">
+                <h2 class="main-info-title">Looping Through an Array</h2>
+                <p class="par">You can access array values by using a <span style="color: red;">for in</span> loop:</p> 
+                <div class="example">
+                    <h2 class="example-title">Example</h2>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjson_array_loop_in" class="try-btn">View Example</a>
+                </div> 
+                <p class="par">Or you can use a <span style="color: red;">for</span> loop:</p> 
+                <div class="example">
+                    <h2 class="example-title">Example</h2>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjson_array_loop" class="try-btn">View Example</a>
+                </div> 
+            </div>  
+        </main>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+</html>

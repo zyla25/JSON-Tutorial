@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="resources/jsonLogo.png" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="intro.css">
+    <title>JSON PARSE()</title>
+</head>
+<body>
+    <div class="wrapper">
+        <nav id="navbar">
+            <div class="mobile-nav">
+                <div class="logo">
+                    <img src="resources/jsonLogo.png" alt="JSON LOGO" class="json-logo">
+                    <h3 class="nav-heading">JSON Tutorial</h3>
+                </div>
+                <div class="burger-menu">
+                    <div class="bar-container">
+                        <div class="container" id="container">
+                            <span class="bar1"></span>
+                            <span class="bar2"></span>
+                            <span class="bar3"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-btn-container" id="nav-btn-container">
+                <a href="index.html"><i class="fa fa-home home" aria-hidden="true"></i></a>
+                <h1 class="title">TOPICS</h1>
+                <a href="JSON-Intro.html" class="nav-btns">JSON Intro</a>
+                <a href="JSON-Syntax.html" class="nav-btns">JSON Syntax</a>
+                <a href="JSON-Data-Types.html" class="nav-btns">JSON Data Types</a>
+                <a href="JSON-Parse.html" class="nav-btns active">JSON Parse</a>
+                <a href="JSON-Objects.html" class="nav-btns">JSON Objects</a>
+                <a href="JSON-Arrays.html" class="nav-btns">JSON Arrays</a>
+                <a href="JSON-Server.html" class="nav-btns">JSON Server</a>
+                <a href="JSON-PHP.html" class="nav-btns">JSON PHP</a>
+            </div>
+        </nav>
+
+         <main id="main">
+            <h1 class="main-title">JSON.parse()</h1>
+            <div class="main-info">
+                <img src="resources/jsonLogo.png" alt="" class="main-logo">
+                <h2 class="main-info-title">Parse()</h2>
+                <p class="par">A common use of JSON is to exchange data to/from a web server.</p> 
+                <p class="par">When receiving data from a web server, the data is always a string.</p> 
+                <p class="par">Parse the data with <span style="color: red;">JSON.parse()</span>, and the data becomes a JavaScript object.</p> 
+            </div>    
+
+            <div class="main-info">
+                <h2 class="main-info-title">Example - Parsing JSON</h2>
+                <p class="par">Imagine we received this text from a web server:</p> 
+                <div class="example">
+                    <h2 class="example-title">Example</h2>
+                    <p class="red-par">'{"name":"John", "age":30, "city":"New York"}'</p>
+                </div> 
+                <p class="par">Use the JavaScript function JSON.parse() to convert text into a JavaScript object:</p> 
+                <div class="example">
+                    <h2 class="example-title">Example</h2>
+                    <p class="red-par">const obj = JSON.parse('{"name":"John", "age":30, "city":"New York"}');</p>
+                </div> 
+                <div class="important-info">
+                    <h3 class="important-header">!!!</h3>
+                    <p class="par">Make sure the text is in JSON format, or else you will get a syntax error.</p>
+                </div>
+                <p class="par">Use the JavaScript object in your page:</p>
+                <div class="example">
+                    <h2 class="example-title">Example</h2>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjson_parse" class="try-btn">View Example</a>
+                </div> 
+            </div>   
+            <div class="main-info">
+                <h2 class="main-info-title">Array as JSON</h2>
+                <p class="par">When using the <span style="color: red;">JSON.parse()</span> on a JSON derived from an array, the method will return a JavaScript array, instead of a JavaScript object.</p> 
+                <div class="example">
+                    <h2 class="example-title">Example</h2>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjson_parse_array" class="try-btn">View Example</a>
+                </div> 
+            </div> 
+            <div class="main-info">
+                <h2 class="main-info-title">Exceptions</h2>
+                <h2 class="main-info-title">Parsing Dates</h2>
+                <p class="par">Date objects are not allowed in JSON.</p> 
+                <p class="par">If you need to include a date, write it as a string.</p> 
+                <p class="par">You can convert it back into a date object later:</p> 
+                <div class="example">
+                    <h2 class="example-title">Example</h2>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjson_parse_date" class="try-btn">View Example</a>
+                </div> 
+            </div> 
+            
+            <div class="main-info">
+                <h2 class="main-info-title">Parsing Functions</h2>
+                <h2 class="main-info-title">Functions are not allowed in JSON.</h2>
+                <p class="par">If you need to include a function, write it as a string.</p> 
+                <p class="par">If you need to include a date, write it as a string.</p> 
+                <p class="par">You can convert it back into a function later:</p> 
+                <div class="example">
+                    <h2 class="example-title">Example</h2>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjson_parse_function" class="try-btn">View Example</a>
+                </div> 
+                <div class="important-info-red">
+                    <h3 class="important-header">!!!</h3>
+                    <p class="par">You should avoid using functions in JSON, the functions will lose their scope, and you would have to use <span style="color: red;">eval() </span>to convert them back into functions.</p> 
+                </div>
+            </div> 
+        </main>
+     </div>    
+     <script src="javascript.js"></script>
+</body>
+</html>

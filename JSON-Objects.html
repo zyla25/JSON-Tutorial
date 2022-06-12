@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="resources/jsonLogo.png" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="intro.css">
+    <title>JSON Object Literals</title>
+</head>
+<body>
+    <div class="wrapper">
+        <nav id="navbar">
+            <div class="mobile-nav">
+                <div class="logo">
+                    <img src="resources/jsonLogo.png" alt="JSON LOGO" class="json-logo">
+                    <h3 class="nav-heading">JSON Tutorial</h3>
+                </div>
+                <div class="burger-menu">
+                    <div class="bar-container">
+                        <div class="container" id="container">
+                            <span class="bar1"></span>
+                            <span class="bar2"></span>
+                            <span class="bar3"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-btn-container" id="nav-btn-container">
+                <a href="index.html"><i class="fa fa-home home" aria-hidden="true"></i></a>
+                <h1 class="title">TOPICS</h1>
+                <a href="JSON-Intro.html" class="nav-btns">JSON Intro</a>
+                <a href="JSON-Syntax.html" class="nav-btns">JSON Syntax</a>
+                <a href="JSON-Data-Types.html" class="nav-btns">JSON Data Types</a>
+                <a href="JSON-Parse.html" class="nav-btns">JSON Parse</a>
+                <a href="JSON-Objects.html" class="nav-btns active">JSON Objects</a>
+                <a href="JSON-Arrays.html" class="nav-btns">JSON Arrays</a>
+                <a href="JSON-Server.html" class="nav-btns">JSON Server</a>
+                <a href="JSON-PHP.html" class="nav-btns">JSON PHP</a>
+            </div>
+        </nav>
+
+        <!-- MAIN -->
+        <main id="main">
+            <h1 class="main-title">JSON Object Literals</h1>
+            <div class="main-info">
+                <img src="resources/jsonLogo.png" alt="" class="main-logo">
+                <p class="par">This is a JSON string:</p> 
+                <div class="example">
+                    <h2 class="example-title">Example</h2>
+                    <p class="red-par">'{"name":"John", "age":30, "car":null}'</p>
+                </div>
+                <p class="par">Inside the JSON string there is a JSON object literal:</p> 
+                <div class="example">
+                    <h2 class="example-title">Example</h2>
+                    <p class="red-par">{"name":"John", "age":30, "car":null}</p>
+                </div>
+                <p class="par">JSON object literals are surrounded by curly braces {}.</pr>
+                <p class="par">JSON object literals contains key/value pairs.</pr>
+                <p class="par">Keys and values are separated by a colon.</pr>
+                <p class="par">Keys must be strings, and values must be a valid JSON data type:</pr>
+                <p class="par">
+                    <ul>
+                        <li>a string</li>
+                        <li>a number</li>
+                        <li>an objects</li>
+                        <li>an array</li>
+                        <li>a boolean</li>
+                        <li>null</li>
+                    </ul>
+                </p>
+                <p class="par">Each key/value pair is separated by a comma.</p>
+                <div class="important-info">
+                    <h3 class="important-header">!!!</h3>
+                    <p class="par">It is a common mistake to call a JSON object literal "a JSON object".</p>
+                    <p class="par">JSON cannot be an object. JSON is a string format.</p>
+                    <p class="par">The data is only JSON when it is in a string format. When it is converted to a JavaScript variable, it becomes a JavaScript object.</p>
+                </div>
+            </div>  
+            <div class="main-info">
+                <h2 class="main-info-title">JavaScript Objects</h2>
+                <p class="par">You can create a JavaScript object from a JSON object literal:</p> 
+                <div class="example">
+                    <h2 class="example-title">Example</h2>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjson_object_literal" class="try-btn">View Example</a>
+                </div> 
+                <p class="par">Normally, you create a JavaScript object by parsing a JSON string:</p> 
+                <div class="example">
+                    <h2 class="example-title">Example</h2>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjson_object_parse" class="try-btn">View Example</a>
+                </div> 
+            </div>  
+            <div class="main-info">
+                <h2 class="main-info-title">Accessing Object Values</h2>
+                <p class="par">You can access object values by using dot (.) notation:</p> 
+                <div class="example">
+                    <h2 class="example-title">Example</h2>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjson_object_dot" class="try-btn">View Example</a>
+                </div> 
+                <p class="par">You can also access object values by using bracket ([]) notation:</p> 
+                <div class="example">
+                    <h2 class="example-title">Example</h2>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjson_object_bracket" class="try-btn">View Example</a>
+                </div> 
+            </div>
+            <div class="main-info">
+                <h2 class="main-info-title">Looping an Object</h2>
+                <p class="par">You can loop through object properties with a for-in loop:</p> 
+                <div class="example">
+                    <h2 class="example-title">Example</h2>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjson_object_loop" class="try-btn">View Example</a>
+                </div> 
+                <p class="par">In a for-in loop, use the bracket notation to access the property values:</p> 
+                <div class="example">
+                    <h2 class="example-title">Example</h2>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjson_object_loop_bracket" class="try-btn">View Example</a>
+                </div> 
+            </div>
+        </main>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+</html>
